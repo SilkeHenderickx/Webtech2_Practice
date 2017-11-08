@@ -1,71 +1,27 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8"> 
-  <head>
-    <title>Student Grades </title>
-    <script src='scripts/jquery-3.2.1.min.js'></script>
-    <link rel="stylesheet" href="style/main.css" type="text/css">
-    <!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  	
-	<script src='scripts/main.js'></script>
-  </head>
-  <body>
-  <div>
-    <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Student Grades</a>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Add Grades<span class="sr-only">(current)</span></a></li>
-          <li><a href="checkgrades.html">Check Grades</a></li>
-        </ul>
-      </div>
-    </div>
-  	</nav>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="application-name" content="">
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+</head>
+
+<body ng-app="parkingApp">
+  <div class="container-fluid">
+    <div class="content" ng-view></div>
   </div>
-  <div class="col-sm-6 col-md-4" class="panel panel-default">
-    <div class="panel-heading">
-      <h3 class="panel-title">Add a grade</h3>
-    </div>
-    <div class="panel-body">
-      
-      <form class="form-horizontal">
-        <div class="form-group">
-          <label for="name" class="col-sm-3 control-label">Name: </label>
-          <div class="col-sm-9">
-            <input type="text" class="form-control" id="name" placeholder="Name">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="course" class="col-sm-3 control-label">Course: </label>
-          <div class="col-sm-9">
-            <input type="text" class="form-control" id="course" placeholder="Course">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="grade" class="col-sm-3 control-label">Grade</label>
-          <div class="col-sm-9">
-            <input type="text" class="form-control" id="grade" placeholder="Grade">
-          </div>
-        </div>
-      </form>
-      <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10">
-          <button onclick="addGrade();" class="btn btn-success">Submit</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js" integrity="sha384-V6/dyDFv85/V/Ktq3ez5B80/c9ZY7jV9c/319rqwNOz3h9CIPdd2Eve0UQBYMMr/" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js" integrity="sha384-vKUG6ZisndNtIFOTSdC1VoTcFLTD9Iv5KMkeIAYhTVQvXaDs6zCW1M3ceLyVccge" crossorigin="anonymous"></script>
+  <script src="scripts/app.js"></script>
+</body>
+
 </html>
