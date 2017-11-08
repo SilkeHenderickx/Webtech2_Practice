@@ -8,7 +8,7 @@ function addGrade(){
 	
 	doc.name = name;
 	doc.course = course;
-	doc.grade = grade;
+	doc.grade = parseInt(grade);
 	doc.type = 'student';
 	
 	var json = JSON.stringify(doc);
@@ -33,10 +33,11 @@ function checkGrades(){
 	var grades;
 	
 	var ALL_DOCS = '../../_all_docs?include_docs=true';
+	var POINTS_COUNTER = '_view/pointsCounter';
 	
 	$.ajax({
 		type: 'GET',
-		url: ALL_DOCS,
+		url: POINTS_COUNTER + '?reduce=false',
 		contentType: 'application/json',
 		async: true,
 		success: function(data){
